@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './ShoppingCart.css';
 
 class ShoppingCart extends Component {
-    costructor(props) {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -17,6 +17,7 @@ class ShoppingCart extends Component {
     }
 
     render() {
+        console.log(this.state.shoppingCart);
         let shoppingCartDisplay = this.state.shoppingCart.map((element, index) => {
             return (
                 <div className="shopping-cart-product-container" key={index}>
